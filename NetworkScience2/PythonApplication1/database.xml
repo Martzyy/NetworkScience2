@@ -3,11 +3,26 @@
 	<node>
 		<name>marcus</name>
 		<attribute>dumb</attribute>
+		<attribute>90s kid</attribute>
 		<relation>charlotte:test</relation>
+		<relation>samantha:eyecandy</relation>
 	</node>
 	<node>
 		<name>charlotte</name>
 		<attribute>smat</attribute>
+		<attribute>20's kid</attribute>
 		<relation>marcus:test</relation>
+		<relation>charlottesister:sister</relation>
+	</node>
+	<node>
+		<name>charlottesister</name>
+		<attribute>idk</attribute>
+		<attribute>idk2</attribute>
+		<relation>charlotte:sister</relation>
+	</node>
+		<node>
+		<name>samantha</name>
+		<attribute>pretty</attribute>
+		<attribute>smat</attribute>
 	</node>
 </network>
