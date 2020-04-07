@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<network>
+	<node>
+		<name>marcus</name>
+		<attribute>dumb</attribute>
+		<relation>charlotte:test</relation>
+	</node>
+	<node>
+		<name>charlotte</name>
+		<attribute>smat</attribute>
+		<relation>marcus:test</relation>
+	</node>
+</network>
