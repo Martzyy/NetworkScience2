@@ -20,11 +20,6 @@ class node:
         self.relations = {}
         return
 
-    def init(self):
-        self.attributes = {}
-        self.connected = {}
-        return
-
 class kg:
     network:list
 
