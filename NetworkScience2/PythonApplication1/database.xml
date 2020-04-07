@@ -1,28 +1,86 @@
 <?xml version='1.0' encoding='utf-8'?>
 <network>
 	<node>
-		<name>marcus</name>
-		<attribute>dumb</attribute>
-		<attribute>90s kid</attribute>
-		<relation>charlotte:test</relation>
-		<relation>samantha:eyecandy</relation>
+		<name>Lady Gaga</name>
+		<attribute>gender : F</attribute>
+		<attribute>country : US</attribute>
 	</node>
 	<node>
-		<name>charlotte</name>
-		<attribute>smat</attribute>
-		<attribute>20's kid</attribute>
-		<relation>marcus:test</relation>
-		<relation>charlottesister:sister</relation>
+		<name>Dave Chappelle</name>
+		<attribute>gender : M</attribute>
+		<attribute>country : US</attribute>
 	</node>
 	<node>
-		<name>charlottesister</name>
-		<attribute>idk</attribute>
-		<attribute>idk2</attribute>
-		<relation>charlotte:sister</relation>
+		<name>Tom Hardy</name>
+		<attribute>gender : M</attribute>
+		<attribute>country : UK</attribute>
 	</node>
-		<node>
-		<name>samantha</name>
-		<attribute>pretty</attribute>
-		<attribute>smat</attribute>
+	<node>
+		<name>Matt Damon</name>
+		<attribute>gender : M</attribute>
+		<attribute>country : UK</attribute>
+	</node>
+	<node>
+		<name>Julia Roberts</name>
+		<attribute>gender : F</attribute>
+		<attribute>country : UK</attribute>
+	</node>
+	<node>
+		<name>Bradley Cooper</name>
+		<attribute>gender : M</attribute>
+		<attribute>country : UK</attribute>
+	</node>
+	<node>
+		<name>Marion Cotillard</name>
+		<attribute>gender : F</attribute>
+		<attribute>country : FR</attribute>
+	</node>
+	<node>
+		<name>Leonardo DiCaprio</name>
+		<attribute>gender : M</attribute>
+		<attribute>country : US</attribute>
+	</node>
+	<node>
+		<name>Christopher Nolan</name>
+		<attribute>gender : M</attribute>
+		<attribute>country : US</attribute>
+		<attribute>country : UK</attribute>
+	</node>
+	<node>
+		<name>George Clooney</name>
+		<attribute>gender : M</attribute>
+		<attribute>country : US</attribute>
+	</node>
+	<node>
+		<name>A Star Is Born</name>
+		<attribute>genre : Drama</attribute>
+		<attribute>genre : Music</attribute>
+		<attribute>genre : Romance</attribute>
+		<relation>Lady Gaga:stars</relation>
+		<relation>Dave Chappelle:stars</relation>
+		<relation>Bradley Cooper:stars</relation>
+		<relation>Bradley Cooper:director</relation>
+	</node>
+	<node>
+		<name>Inception</name>
+		<attribute>genre : Action</attribute>
+		<attribute>genre : Sci-Fi</attribute>
+		<relation>Tom Hardy:stars</relation>
+		<relation>Marion Cotillard:stars</relation>
+		<relation>Leonardo DiCaprio:stars</relation>
+		<relation>Christopher Nolan:director</relation>
+	</node>
+	<node>
+		<name>Surburbicon</name>
+		<attribute>genre : Comedy</attribute>
+		<relation>Matt Damon:stars</relation>
+		<relation>George Clooney:director</relation>
+	</node>
+	<node>
+		<name>Ocean's Eleven</name>
+		<attribute>genre : Crime</attribute>
+		<relation>Matt Damon:stars</relation>
+		<relation>Julia Roberts:stars</relation>
+		<relation>George Clooney:stars</relation>
 	</node>
 </network>
