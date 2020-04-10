@@ -2,7 +2,6 @@ from lxml import etree
 import pickle
 import sys
 
-metaPaths = []
 
 class node:
     name:str #name of node
@@ -142,7 +141,7 @@ class kg:
 datapath = 'PythonApplication1/database.xml'
 S1 = {"Dave Chappelle" : "Lady Gaga", "Matt Damon" : "Julia Roberts"}
 S2 = {"Dave Chappelle" : "Bradley Cooper", "Matt Damon" : "George Clooney"}
-L = 4
+L = 3
 kgraph = kg()
 kgraph.parseData(datapath)
 kgraph.generateInversePath()
