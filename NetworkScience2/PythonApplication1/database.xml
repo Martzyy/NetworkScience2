@@ -2,60 +2,62 @@
 <network>
 	<node>
 		<name>Lady Gaga</name>
-		<attribute>gender : F</attribute>
-		<attribute>country : US</attribute>
+		<attribute>gender:F</attribute>
+		<attribute>country:US</attribute>
 	</node>
 	<node>
 		<name>Dave Chappelle</name>
-		<attribute>gender : M</attribute>
-		<attribute>country : US</attribute>
+		<attribute>gender:M</attribute>
+		<attribute>country:US</attribute>
 	</node>
 	<node>
 		<name>Tom Hardy</name>
-		<attribute>gender : M</attribute>
-		<attribute>country : UK</attribute>
+		<attribute>gender:M</attribute>
+		<attribute>country:UK</attribute>
 	</node>
 	<node>
 		<name>Matt Damon</name>
-		<attribute>gender : M</attribute>
-		<attribute>country : UK</attribute>
+		<attribute>gender:M</attribute>
+		<attribute>country:UK</attribute>
 	</node>
 	<node>
 		<name>Julia Roberts</name>
-		<attribute>gender : F</attribute>
-		<attribute>country : UK</attribute>
+		<attribute>gender:F</attribute>
+		<attribute>country:UK</attribute>
 	</node>
 	<node>
 		<name>Bradley Cooper</name>
-		<attribute>gender : M</attribute>
-		<attribute>country : UK</attribute>
+		<attribute>gender:M</attribute>
+		<attribute>country:UK</attribute>
 	</node>
 	<node>
 		<name>Marion Cotillard</name>
-		<attribute>gender : F</attribute>
-		<attribute>country : FR</attribute>
+		<attribute>gender:F</attribute>
+		<attribute>country:FR</attribute>
 	</node>
 	<node>
 		<name>Leonardo DiCaprio</name>
-		<attribute>gender : M</attribute>
-		<attribute>country : US</attribute>
+		<attribute>gender:M</attribute>
+		<attribute>country:US</attribute>
+		<relation>Golden Globe:award</relation>
 	</node>
 	<node>
 		<name>Christopher Nolan</name>
-		<attribute>gender : M</attribute>
-		<attribute>country : US</attribute>
-		<attribute>country : UK</attribute>
+		<attribute>gender:M</attribute>
+		<attribute>country:US</attribute>
+		<attribute>country:UK</attribute>
 	</node>
 	<node>
 		<name>George Clooney</name>
-		<attribute>gender : M</attribute>
-		<attribute>country : US</attribute>
+		<attribute>gender:M</attribute>
+		<attribute>country:US</attribute>
+		<relation>Golden Globe:award</relation>
 	</node>
 	<node>
 		<name>A Star Is Born</name>
-		<attribute>genre : Drama</attribute>
-		<attribute>genre : Music</attribute>
-		<attribute>genre : Romance</attribute>
+		<attribute>genre:Drama</attribute>
+		<attribute>genre:Music</attribute>
+		<attribute>genre:Romance</attribute>
 		<relation>Lady Gaga:stars</relation>
 		<relation>Dave Chappelle:stars</relation>
 		<relation>Bradley Cooper:stars</relation>
@@ -63,8 +65,8 @@
 	</node>
 	<node>
 		<name>Inception</name>
-		<attribute>genre : Action</attribute>
-		<attribute>genre : Sci-Fi</attribute>
+		<attribute>genre:Action</attribute>
+		<attribute>genre:Sci-Fi</attribute>
 		<relation>Tom Hardy:stars</relation>
 		<relation>Marion Cotillard:stars</relation>
 		<relation>Leonardo DiCaprio:stars</relation>
@@ -72,15 +74,18 @@
 	</node>
 	<node>
 		<name>Surburbicon</name>
-		<attribute>genre : Comedy</attribute>
+		<attribute>genre:Comedy</attribute>
 		<relation>Matt Damon:stars</relation>
 		<relation>George Clooney:director</relation>
 	</node>
 	<node>
 		<name>Ocean's Eleven</name>
-		<attribute>genre : Crime</attribute>
+		<attribute>genre:Crime</attribute>
 		<relation>Matt Damon:stars</relation>
 		<relation>Julia Roberts:stars</relation>
 		<relation>George Clooney:stars</relation>
+	</node>
+	<node>
+		<name>Golden Globe</name>
 	</node>
 </network>

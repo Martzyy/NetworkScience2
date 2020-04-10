@@ -2,6 +2,8 @@ from lxml import etree
 import pickle
 import sys
 
+metaPaths = []
+
 class node:
     name:str #name of node
     attributes:dict #attributes in form of dict of strings
@@ -43,6 +45,7 @@ class kg:
                         self.search(item).relations[nod.name] = []
                     self.search(item).relations[nod.name].append((tupl[0],1))
         return
+
     def search(self,name):
         for item in self.network:
             if item.name == name:
@@ -68,7 +71,12 @@ class kg:
                 elif elem.tag == 'name':
                     previous.name = elem.text
                 elif elem.tag == 'attribute':
-                    previous.attributes = elem.text
+                    lst = elem.text.split(":")
+                    try: 
+                        previous.attributes[lst[0]]
+                    except Exception:
+                        previous.attributes[lst[0]] = []
+                    previous.attributes[lst[0]].append(lst[1])
                 elif elem.tag == 'relation':
                     lst = elem.text.split(":",1)
                     try: 
@@ -82,9 +90,62 @@ class kg:
             elem.clear()
         return
 
+    def findMetaPath(self, source, dest, L, metaPaths, temp):
+        #find all meta-paths of graph
+        #connects source to target entity in some user-provided example
+        if len(temp) < L:
+            if source == dest:
+                temp.append(source)
+                metaPaths.append(temp)
+                return
+            else:
+                for item in self.network:
+                    if source == item.name:
+                        temp.append(source)
+                        for relation in item.relations:
+                            self.findMetaPath(relation, dest, L, metaPaths, temp)
+        return 
 
-datapath = 'database.xml'
+    def grease(self,S,L):
+        metaPaths = []
+        for source in S:
+            temp = []
+            self.findMetaPath(source, S[source], L, metaPaths, temp)
+        print(metaPaths)
+        #find all properties that constrain target entity in some user-provided example
+        properties = {"query" : {}, "answer" : {}}
+        dicts_q = []
+        dicts_a = []
+        for key in S:
+            for item in self.network:
+                if key == item.name:
+                    dicts_q.append(item.attributes)
+        for d in dicts_q:
+            for k, v in d.items():
+                try:
+                    properties["query"].setdefault(k, []).extend(v)
+                except TypeError:
+                    properties["query"][k].append(v)
+        for value in S.values():
+            for item in self.network:
+                if value == item.name:
+                    dicts_a.append(item.attributes)
+        for d in dicts_a:
+            for k, v in d.items():
+                try:
+                    properties["answer"].setdefault(k, []).extend(v)
+                except TypeError:
+                    properties["answer"][k].append(v)
+        
+
+#datapath = 'database.xml'
+datapath = 'PythonApplication1/database.xml'
+S1 = {"Dave Chappelle" : "Lady Gaga", "Matt Damon" : "Julia Roberts"}
+S2 = {"Dave Chappelle" : "Bradley Cooper", "Matt Damon" : "George Clooney"}
+L = 4
 kgraph = kg()
 kgraph.parseData(datapath)
 kgraph.generateInversePath()
 kgraph.show()
+kgraph.grease(S1, L)
+
