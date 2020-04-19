@@ -140,6 +140,7 @@ class kg:
                         pc += 1
         return pc
 
+"""
     def calculatePc2(self, path, nodeNo):
         #calculate number of paths in the KG that follow meta-path P for 2 consecutive relation type
         r1 = path[nodeNo-1]
@@ -181,7 +182,7 @@ class kg:
                         if item.relations[key] != path[i]:
                             break
         return
-    
+        """
 
     def generativeMetaPathWeighting(self, metaPaths, S, metaPathWeight):
         #compute prior
