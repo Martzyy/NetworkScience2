@@ -2,6 +2,7 @@ from lxml import etree
 import pickle
 import sys
 import itertools
+import math
 
 class node:
     name:str #name of node
@@ -172,7 +173,7 @@ class kg:
         return  count
         
 
-    def generativeMetaPathWeighting(self, metaPaths, S, metaPathWeight, metaPaths1):
+    def generativeMetaPathWeighting(self, metaPaths, S, metaPathWeight, metaPaths1, pathNum):
         #compute prior
         prior1 = []
         prior2 = []
@@ -205,13 +206,29 @@ class kg:
             prior_final.append((prior1[i] + prior2[i])/2)
         #print(prior_final)
         #compute likelihood
-        likleihood= []
+        likelihood = []
         for path in metaPaths1:
-            print(path)
-            for i in range(len(path[0])*len(path[len(path)])):
+            len1 = len(path[0])
+            len2 = len(path[len(path)-1])
+            for i in range(len1*len2):
                 likelihood.append(self.calculatePc3(path))
-        print(likelihood)
-
+        #print(likelihood)
+        for i in range(len(likelihood)):
+            pathNum.append(likelihood[i])
+        pc_apc = []
+        for i in range(len(metaPaths)):
+            if (len(metaPaths[i]) <= 2):
+                pc_apc.append(self.calculatePc2(metaPaths[i],1))
+            else:
+                pc_apc.append(prior_final[i])
+        #print(pc_apc)
+        for i in range(len(likelihood)):
+            likelihood[i] = likelihood[i]/pc_apc[i]
+        for i in range(len(prior_final)):
+            metaPathWeight.append(prior_final[i] * likelihood[i])
+        return
+       
+        
     def generativePropertyWeighting(self, prop, propertyWeight):
         #compute prior
         count = 0
@@ -232,7 +249,34 @@ class kg:
         propertyWeight.append(prior*likelihood)
         return
 
-    def grease(self,S,L):
+    def metaPathRelevance(self, q, v, Pi):
+        #set limit to be 3 to prevent highly skewed values
+        path = []
+        temp = []
+        m1 = []
+        m2 = []
+        count = 0
+        self.findMetaPath(q, v, len(Pi)+1, path, temp)
+        m1 = self.findMetaPath2(path)
+        m2 = self.findMetaPath3(m1)
+        for i in range(len(m2)):
+            if m2[i] == Pi:
+                count += 1
+        return min(count, 3)
+        
+    def propertyRelevance(self, v):
+        #set aprop to be 1
+        count = 0
+        for item in self.network:
+            if item.name == v:
+                v_attribute = item.attributes
+        for item in self.network:
+            if item.attributes == v_attribute:
+                count += 1
+        return count
+
+    def grease(self,S,L,m, q):
+        L += 1
         #line 1 of pseudocode
         #find all meta-paths of graph
         #connects source to target entity in some user-provided example
@@ -244,8 +288,8 @@ class kg:
         metaPaths1 = self.findMetaPath2(metaPaths)
         metaPaths2 = self.findMetaPath3(metaPaths1)
         #print(metaPaths)
-        print(metaPaths1)
-        print(metaPaths2)
+        #print(metaPaths1)
+        #print(metaPaths2)
         #line 2 of pseudocode
         #find all properties that constrain target entities in some user-provided example
         properties = []
@@ -257,7 +301,8 @@ class kg:
         #lines 4-6 of pseudocode
         #generative meta-path weightage
         metaPathWeight = []
-        self.generativeMetaPathWeighting(metaPaths2, S, metaPathWeight, metaPaths1)
+        pathNum = []
+        self.generativeMetaPathWeighting(metaPaths2, S, metaPathWeight, metaPaths1, pathNum)
         #print(metaPathWeight)
         propertyWeight = []
         for prop in properties:
@@ -265,18 +310,77 @@ class kg:
         #print(propertyWeight)
         #line 7 of pseudocode
         #return m metapaths with largest meta-path weight
-
-
+        top_path = []
+        for i in range(len(metaPathWeight)-1):
+            if metaPathWeight[i] < metaPathWeight[i+1]:
+                temp = metaPathWeight[i]
+                metaPathWeight[i] = metaPathWeight[i+1]
+                metaPathWeight[i+1] = temp
+                temp1 = metaPaths2[i]
+                metaPaths2[i] = metaPaths2[i+1]
+                metaPaths2[i+1] = temp1 
+                temp2 = pathNum[i]
+                pathNum[i] = pathNum[i+1]
+                pathNum[i+1] = temp2
+        #print(metaPaths2) 
+        #print(pathNum) 
+        for i in range(m):
+            top_path.append(metaPaths2[i])
+        #print(top_path)
+        #line 8 of pseudocode
+        #return entities connected from query with meta-paths from line 7
+        entities = []
+        for i in range(len(top_path)):
+            for j in range(len(metaPaths1)):
+                for i1 in range(len(top_path[i])):
+                    for j1 in range(len(metaPaths1[j])):
+                        if top_path[i][i1] in metaPaths1[j][j1]:
+                            if i1 == len(top_path[i])-1:
+                                entities.append(metaPaths[j][-1])
+        entities= list(dict.fromkeys(entities))
+        #print(entities)
+        #line 9-11 of pseudocode
+        #compute extended relevance for line 8
+        relevance = []
+        #set limit to 
+        #set decay factor to be 0.1
+        rel = 0
+        #print(metaPathWeight)
+        #print(metaPaths2)
+        for i in range(len(entities)):
+            for j in range(len(metaPaths2)):
+                rel += (metaPathWeight[j] * math.exp(-0.1*len(metaPaths2[i])) * self.metaPathRelevance(q, entities[i], metaPaths2[j]))
+            for k in range(len(properties)):
+                rel += (self.propertyRelevance(entities[i]) * propertyWeight[k])
+            relevance.append(rel)
+            rel = 0
+        #print(relevance)
+        #line 12 of pseudocode
+        #return k top-ranked ones
+        #set k to be 2
+        k = 2
+        for i in range(len(relevance)-1):
+            if relevance[i] < relevance[i+1]:
+                temp = relevance[i]
+                relevance[i] = relevance[i+1]
+                relevance[i+1] = temp
+                temp1 = entities[i]
+                entities[i] = entities[i+1]
+                entities[i+1] = temp1 
+        for i in range(min(2, len(entities))):
+            print(entities[i])
         return
 
 #datapath = 'database.xml'
 datapath = '/Users/charlottechng/Desktop/NetworkScience2/NetworkScience2/PythonApplication1/database.xml'
 S1 = {"Dave Chappelle" : "Lady Gaga", "Matt Damon" : "Julia Roberts"}
 S2 = { "Dave Chappelle" : "Bradley Cooper","Matt Damon" : "George Clooney"}
-L = 3
+L = 2
+m = 2
+q = "Dave Chappelle"
 kgraph = kg()
 kgraph.parseData(datapath)
 kgraph.generateInversePath()
 kgraph.show()
-kgraph.grease(S2, L)
+kgraph.grease(S1, L, m, q)
 

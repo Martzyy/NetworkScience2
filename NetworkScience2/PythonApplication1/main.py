@@ -199,7 +199,7 @@ class kg:
         #print(prior2)
         for i in range(len(prior1)):
             prior_final.append((prior1[i] + prior2[i])/2)
-        print(prior_final)
+        #print(prior_final)
         #compute likelihood
         for key in S:
             for path in metaPaths:
