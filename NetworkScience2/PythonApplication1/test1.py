@@ -120,7 +120,9 @@ class kg:
                                 temp.append(item.relations[relation])
             metaPaths2.append(temp[:])
             temp = []
-        #print(metaPaths2)
+        return metaPaths2
+    
+    def findMetaPath3(self, metaPaths2):
         metaPaths3 = []
         for i in range(len(metaPaths2)):
             new_list = list(itertools.product(*metaPaths2[i]))
@@ -140,7 +142,6 @@ class kg:
                         pc += 1
         return pc
 
-"""
     def calculatePc2(self, path, nodeNo):
         #calculate number of paths in the KG that follow meta-path P for 2 consecutive relation type
         r1 = path[nodeNo-1]
@@ -149,65 +150,68 @@ class kg:
         for item in self.network:
             for relation in item.relations:
                 for i in range(len(item.relations[relation])):
-                    if item.relations[relation][i] != r1 and item.relations[relation][i] != r2:
-                        break
-                    else:
-                        if item.relations[relation][i] == r1:
-                            for item1 in self.network:
-                                if item1.name == relation:
-                                    for relation1 in item1.relations:
-                                        for i in range(len(item1.relations[relation1])):
-                                            if item1.relations[relation1][i] ==  r2:
-                                                pc += 1
-                                                break
-                            pc -= 1
-                            break
-                        elif item.relations[relation][i] == r2:
-                            for item2 in self.network:
-                                if item2.name == relation:
-                                    for relation2 in item2.relations:
-                                        for i in range(len(item2.relations[relation2])):
-                                            if item2.relations[relation2][i] ==  r1:
-                                                pc += 1  
-                                                break
-                            pc -= 1  
-                            break         
+                    if item.relations[relation][i] == r1:
+                        for item1 in self.network:
+                            if item1.name == relation:
+                                for relation1 in item1.relations:
+                                    if r1[0] == r2[0]:
+                                        if relation1 != item.name:
+                                            for j in range(len(item1.relations[relation1])):
+                                                if item1.relations[relation1][j] == r2:
+                                                    pc += 1
+                                    else:
+                                        for j in range(len(item1.relations[relation1])):
+                                                if item1.relations[relation1][j] == r2:
+                                                    pc += 1
         return pc
 
-    def calculatePc3(self, source, dest, path):
-        for item in self.network:
-            if item.name == source:
-                for key in item.relations:
-                    for i in range(len(path)):
-                        if item.relations[key] != path[i]:
-                            break
-        return
-        """
+    def calculatePc3(self, path):
+        count = 1
+        for i in range(1,len(path)-1):
+            count *= len(path[i])
+        return  count
+        
 
-    def generativeMetaPathWeighting(self, metaPaths, S, metaPathWeight):
+    def generativeMetaPathWeighting(self, metaPaths, S, metaPathWeight, metaPaths1):
         #compute prior
         prior1 = []
         prior2 = []
+        prior_final = []
         for path in metaPaths:
             pc1 = self.calculatePc(path,1)
             #print(pc1)
             pc2 = 1
             for i in range(2,len(path)+1,1):
                 num = self.calculatePc2(path,i-1)
-                print(num)
                 den = self.calculatePc(path,i-1)
                 pc2 *= (num/den)
             prior = pc1 * pc2
             prior1.append(prior)
             prior = 0
         #print(prior1)
+        for path in metaPaths:
+            pc1 = self.calculatePc(path,1)
+            #print(pc1)
+            pc2 = 1
+            for i in range(1,len(path)-1,1):
+                num = self.calculatePc2(path,i)
+                den = self.calculatePc(path,i+1)
+                pc2 *= (num/den)
+            prior = pc1 * pc2
+            prior2.append(prior)
+            prior = 0
+        #print(prior2)
+        for i in range(len(prior1)):
+            prior_final.append((prior1[i] + prior2[i])/2)
+        #print(prior_final)
         #compute likelihood
-        for key in S:
-            for path in metaPaths:
-                prob = self.calculatePc3(key, S[key], path)
+        likleihood= []
+        for path in metaPaths1:
+            print(path)
+            for i in range(len(path[0])*len(path[len(path)])):
+                likelihood.append(self.calculatePc3(path))
+        print(likelihood)
 
-
-        
     def generativePropertyWeighting(self, prop, propertyWeight):
         #compute prior
         count = 0
@@ -238,8 +242,10 @@ class kg:
             self.findMetaPath(source, S[source], L, metaPaths, temp)
         metaPaths1 = []
         metaPaths1 = self.findMetaPath2(metaPaths)
+        metaPaths2 = self.findMetaPath3(metaPaths1)
         #print(metaPaths)
         print(metaPaths1)
+        print(metaPaths2)
         #line 2 of pseudocode
         #find all properties that constrain target entities in some user-provided example
         properties = []
@@ -247,11 +253,11 @@ class kg:
             for item in self.network:
                 if value == item.name:
                     properties.append(item.attributes)
-        print(properties)
+        #print(properties)
         #lines 4-6 of pseudocode
         #generative meta-path weightage
         metaPathWeight = []
-        self.generativeMetaPathWeighting(metaPaths1, S, metaPathWeight)
+        self.generativeMetaPathWeighting(metaPaths2, S, metaPathWeight, metaPaths1)
         #print(metaPathWeight)
         propertyWeight = []
         for prop in properties:
@@ -264,13 +270,13 @@ class kg:
         return
 
 #datapath = 'database.xml'
-datapath = 'PythonApplication1/database.xml'
+datapath = '/Users/charlottechng/Desktop/NetworkScience2/NetworkScience2/PythonApplication1/database.xml'
 S1 = {"Dave Chappelle" : "Lady Gaga", "Matt Damon" : "Julia Roberts"}
-S2 = {"Dave Chappelle" : "Bradley Cooper", "Matt Damon" : "George Clooney"}
+S2 = { "Dave Chappelle" : "Bradley Cooper","Matt Damon" : "George Clooney"}
 L = 3
 kgraph = kg()
 kgraph.parseData(datapath)
 kgraph.generateInversePath()
 kgraph.show()
-kgraph.grease(S1, L)
+kgraph.grease(S2, L)
 
