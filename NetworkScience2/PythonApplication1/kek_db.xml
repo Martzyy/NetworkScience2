@@ -1,0 +1,1421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>John Cleese</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Spain</attribute>
+    <name>Antonio Banderas</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Nicolas Cage</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>George Clooney</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Robert De Niro</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Johnny Depp</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Ralph Fiennes</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Harrison Ford</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Dustin Hoffman</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Julianne Moore</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Gary Oldman</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Lebanon</attribute>
+    <name>Keanu Reeves</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Christina Ricci</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Kristin Scott Thomas</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Uma Thurman</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Denzel Washington</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Julie Andrews</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Sean Bean</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Kate Beckinsale</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Michael Caine</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Hong Kong</attribute>
+    <name>Jackie Chan</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Willem Dafoe</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Danny Glover</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Hugh Grant</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Dennis Hopper</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Jeremy Irons</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Michael Keaton</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Alfred Molina</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Ron Perlman</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jada Pinkett Smith</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Dennis Quaid</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Emma Thompson</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Elijah Wood</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Spain</attribute>
+    <name>Javier Bardem</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jason Bateman</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Annette Bening</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Halle Berry</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Benjamin Bratt</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Jim Broadbent</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Josh Brolin</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>James Caan</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Harrison Ford</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Charlotte Gainsbourg</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>John Hannah</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Ciaran Hinds</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Angelina Jolie</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Catherine Keener</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>John Lithgow</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Stephen Rea</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Ireland</attribute>
+    <name>Jonathan Rhys Meyers</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Australia</attribute>
+    <name>Geoffrey Rush</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>David Schwimmer</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Imelda Staunton</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Sweden</attribute>
+    <name>Peter Stormare</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Danny Trejo</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jessica Alba</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Allison Janney</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:Ukraine</attribute>
+    <name>Mila Kunis</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Canada</attribute>
+    <name>Ryan Reynolds</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Owen Wilson</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Eric Balfour</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Canada</attribute>
+    <name>Jay Baruchel</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:France</attribute>
+    <name>M�lanie Bernier</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jack Black</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Gerard Butler</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Lizzy Caplan</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Steve Carell</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Kyle Chandler</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Australia</attribute>
+    <name>Jason Clarke</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:France</attribute>
+    <name>Fran�ois Cluzet</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Billy Connolly</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Frances Conroy</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Tim Conway</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Bradley Cooper</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Bryan Cranston</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jim Cummings</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Brittany Daniel</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Paul Dano</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Eddie Deezen</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jeffrey DeMunn</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Clint Dyer</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Idris Elba</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Anna Faris</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Will Forte</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>James Franco</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Martin Freeman</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Ginnifer Goodwin</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Canada</attribute>
+    <name>Ryan Gosling</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Bill Hader</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jon Hamm</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Kevin Hart</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:India</attribute>
+    <name>Anil Kapoor</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:India</attribute>
+    <name>Saif Ali Khan</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Norway</attribute>
+    <name>Anders Baasmo Christiansen</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Brie Larson</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Hugh Laurie</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:France</attribute>
+    <name>Anne Le Ny</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Justin Long</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Bud Luckey</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Kelly Macdonald</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>James McAvoy</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Chris Messina</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Mandy Moore</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Emily Mortimer</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Donna Murphy</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Bill Nighy</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Sweden</attribute>
+    <name>Michael Nyqvist</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Japan</attribute>
+    <name>Ren Osugi</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Patton Oswalt</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Alfie Allen</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Hayden Panettiere</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Ethan Phillips</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:Canada</attribute>
+    <name>Alison Pill</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:Italy</attribute>
+    <name>Violante Placido</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Emma Roberts</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Canada</attribute>
+    <name>Seth Rogen</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Maya Rudolph</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Wyatt Russell</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jason Segel</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Sweden</attribute>
+    <name>Gustaf Skarsg�rd</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Ray Stevenson</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Eric Stonestreet</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jason Sudeikis</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Japan</attribute>
+    <name>Yutaka Takenouchi</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:France</attribute>
+    <name>Audrey Tautou</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>David Tennant</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Switzerland</attribute>
+    <name>Bruno Todeschini</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Julie Walters</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Nigeria</attribute>
+    <name>Hugo Weaving</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Rainn Wilson</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Mahershala Ali</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Common</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Michael Ealy</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:Canada</attribute>
+    <name>Rachel McAdams</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>America Ferrera</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:France</attribute>
+    <name>Omar Sy</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Canada</attribute>
+    <name>Eric Bauza</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:France</attribute>
+    <name>Audrey Fleurot</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Zachary Levi</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Guatemala</attribute>
+    <name>Oscar Isaac</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Larry the Cable Guy</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Russell Brand</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Josh Gad</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Sharon Horgan</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Emma Stone</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:India</attribute>
+    <name>John Abraham</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Randall Park</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Kristen Wiig</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Miranda Cosgrove</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jack McBrayer</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Zoe Kazan</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Belgium</attribute>
+    <name>Fran�ois Damiens</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Channing Tatum</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Robert Pattinson</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Eddie Redmayne</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Amy Seimetz</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:Japan</attribute>
+    <name>Satomi Ishihara</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Carey Mulligan</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jonah Hill</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Annabelle Wallis</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Miles Heizer</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Norway</attribute>
+    <name>P�l Sverre Hagen</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Dave Franco</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Emily Meade</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:UK</attribute>
+    <name>Andrea Riseborough</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:Denmark</attribute>
+    <name>Deepika Padukone</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jake Johnson</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Scottie Thompson</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Natalie Morales</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Armie Hammer</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Alden Ehrenreich</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:France</attribute>
+    <name>Tahar Rahim</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Hailee Steinfeld</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jenny Slate</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:Australia</attribute>
+    <name>Margot Robbie</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:France</attribute>
+    <name>Iz�a Higelin</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Pakistan</attribute>
+    <name>Kumail Nanjiani</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Tom Cullen</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Crystal Reed</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Theo James</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Zendaya</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Japan</attribute>
+    <name>Hiroki Hasegawa</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Germany</attribute>
+    <name>Tobias Santelmann</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:Australia</attribute>
+    <name>Brenton Thwaites</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Shameik Moore</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Jet� Laurence</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Sandra Bullock</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Tom Hanks</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Steven Seagal</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Chris Rock</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Ben Stiller</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Justin Timberlake</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Fred Armisen</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>Craig Ferguson</name>
+  </node>
+  <node>
+    <attribute>gender:Female</attribute>
+    <attribute>country:USA</attribute>
+    <name>Tina Fey</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:USA</attribute>
+    <name>Danny McBride</name>
+  </node>
+  <node>
+    <attribute>gender:Male</attribute>
+    <attribute>country:UK</attribute>
+    <name>James Corden</name>
+  </node>
+
+  <node>
+    <name>Tangled</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Mandy Moore:actor</relation>
+    <relation>Zachary Levi:actor</relation>
+    <relation>Donna Murphy:actor</relation>
+    <relation>Ron Perlman:actor</relation>
+  </node>
+  <node>
+    <name>Hail, Caesar!</name>
+    <attribute>genre:Comedy</attribute>
+    <relation>Josh Brolin:actor</relation>
+    <relation>George Clooney:actor</relation>
+    <relation>Alden Ehrenreich:actor</relation>
+    <relation>Ralph Fiennes:actor</relation>
+  </node>
+  <node>
+    <name>The Croods</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Nicolas Cage:actor</relation>
+    <relation>Emma Stone:actor</relation>
+    <relation>Ryan Reynolds:actor</relation>
+    <relation>Catherine Keener:actor</relation>
+  </node>
+  <node>
+    <name>Pet Sematary</name>
+    <attribute>genre:Horror</attribute>
+    <relation>Jason Clarke:actor</relation>
+    <relation>Amy Seimetz:actor</relation>
+    <relation>John Lithgow:actor</relation>
+    <relation>Jet� Laurence:actor</relation>
+  </node>
+  <node>
+    <name>How to Train Your Dragon</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Jay Baruchel:actor</relation>
+    <relation>Gerard Butler:actor</relation>
+    <relation>Craig Ferguson:actor</relation>
+    <relation>America Ferrera:actor</relation>
+  </node>
+  <node>
+    <name>Machete</name>
+    <attribute>genre:Action</attribute>
+    <relation>Danny Trejo:actor</relation>
+    <relation>Robert De Niro:actor</relation>
+    <relation>Jessica Alba:actor</relation>
+    <relation>Steven Seagal:actor</relation>
+  </node>
+  <node>
+    <name>The Book of Eli</name>
+    <attribute>genre:Action</attribute>
+    <relation>Denzel Washington:actor</relation>
+    <relation>Gary Oldman:actor</relation>
+    <relation>Mila Kunis:actor</relation>
+    <relation>Ray Stevenson:actor</relation>
+  </node>
+  <node>
+    <name>Ghost Rider, Spirit of Vengeance</name>
+    <attribute>genre:Action</attribute>
+    <relation>Nicolas Cage:actor</relation>
+    <relation>Violante Placido:actor</relation>
+    <relation>Ciaran Hinds:actor</relation>
+    <relation>Idris Elba:actor</relation>
+  </node>
+  <node>
+    <name>6 Souls</name>
+    <attribute>genre:Horror</attribute>
+    <relation>Julianne Moore:actor</relation>
+    <relation>Jonathan Rhys Meyers:actor</relation>
+    <relation>Jeffrey DeMunn:actor</relation>
+    <relation>Frances Conroy:actor</relation>
+  </node>
+  <node>
+    <name>Alpha and Omega</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Justin Long:actor</relation>
+    <relation>Hayden Panettiere:actor</relation>
+    <relation>Dennis Hopper:actor</relation>
+    <relation>Danny Glover:actor</relation>
+  </node>
+  <node>
+    <name>Cars 2</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Larry the Cable Guy:actor</relation>
+    <relation>Owen Wilson:actor</relation>
+    <relation>Michael Caine:actor</relation>
+    <relation>Emily Mortimer:actor</relation>
+  </node>
+  <node>
+    <name>Brave</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Kelly Macdonald:actor</relation>
+    <relation>Billy Connolly:actor</relation>
+    <relation>Emma Thompson:actor</relation>
+    <relation>Julie Walters:actor</relation>
+  </node>
+  <node>
+    <name>21 Jump Street</name>
+    <attribute>genre:Action</attribute>
+    <relation>Jonah Hill:actor</relation>
+    <relation>Channing Tatum:actor</relation>
+    <relation>Brie Larson:actor</relation>
+    <relation>Dave Franco:actor</relation>
+  </node>
+  <node>
+    <name>Madagascar 3, Europe&apos;s Most Wanted</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Ben Stiller:actor</relation>
+    <relation>Chris Rock:actor</relation>
+    <relation>David Schwimmer:actor</relation>
+    <relation>Jada Pinkett Smith:actor</relation>
+  </node>
+  <node>
+    <name>Despicable Me</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Steve Carell:actor</relation>
+    <relation>Jason Segel:actor</relation>
+    <relation>Russell Brand:actor</relation>
+    <relation>Julie Andrews:actor</relation>
+  </node>
+  <node>
+    <name>Cloud Atlas</name>
+    <attribute>genre:Action</attribute>
+    <relation>Tom Hanks:actor</relation>
+    <relation>Halle Berry:actor</relation>
+    <relation>Jim Broadbent:actor</relation>
+    <relation>Hugo Weaving:actor</relation>
+  </node>
+  <node>
+    <name>Race 2</name>
+    <attribute>genre:Action</attribute>
+    <relation>Saif Ali Khan:actor</relation>
+    <relation>John Abraham:actor</relation>
+    <relation>Deepika Padukone:actor</relation>
+    <relation>Anil Kapoor:actor</relation>
+  </node>
+  <node>
+    <name>Arthur Christmas</name>
+    <attribute>genre:Animation</attribute>
+    <relation>James McAvoy:actor</relation>
+    <relation>Hugh Laurie:actor</relation>
+    <relation>Bill Nighy:actor</relation>
+    <relation>Jim Broadbent:actor</relation>
+  </node>
+  <node>
+    <name>The Pirates! In an Adventure with Scientists!</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Hugh Grant:actor</relation>
+    <relation>Martin Freeman:actor</relation>
+    <relation>Imelda Staunton:actor</relation>
+    <relation>David Tennant:actor</relation>
+  </node>
+  <node>
+    <name>Bel Ami</name>
+    <attribute>genre:Crime</attribute>
+    <relation>Robert Pattinson:actor</relation>
+    <relation>Uma Thurman:actor</relation>
+    <relation>Kristin Scott Thomas:actor</relation>
+    <relation>Christina Ricci:actor</relation>
+  </node>
+  <node>
+    <name>Winnie the Pooh</name>
+    <attribute>genre:Animation</attribute>
+    <relation>John Cleese:actor</relation>
+    <relation>Jim Cummings:actor</relation>
+    <relation>Bud Luckey:actor</relation>
+    <relation>Craig Ferguson:actor</relation>
+  </node>
+  <node>
+    <name>Underworld Awakening</name>
+    <attribute>genre:Action</attribute>
+    <relation>Kate Beckinsale:actor</relation>
+    <relation>Stephen Rea:actor</relation>
+    <relation>Michael Ealy:actor</relation>
+    <relation>Theo James:actor</relation>
+  </node>
+  <node>
+    <name>Skyline</name>
+    <attribute>genre:Action</attribute>
+    <relation>Eric Balfour:actor</relation>
+    <relation>Scottie Thompson:actor</relation>
+    <relation>Brittany Daniel:actor</relation>
+    <relation>Crystal Reed:actor</relation>
+  </node>
+  <node>
+    <name>Crazy, Stupid, Love.</name>
+    <attribute>genre:Comedy</attribute>
+    <relation>Steve Carell:actor</relation>
+    <relation>Ryan Gosling:actor</relation>
+    <relation>Julianne Moore:actor</relation>
+    <relation>Emma Stone:actor</relation>
+  </node>
+  <node>
+    <name>Kon-Tiki</name>
+    <attribute>genre:Biography</attribute>
+    <relation>P�l Sverre Hagen:actor</relation>
+    <relation>Anders Baasmo Christiansen:actor</relation>
+    <relation>Tobias Santelmann:actor</relation>
+    <relation>Gustaf Skarsg�rd:actor</relation>
+  </node>
+  <node>
+    <name>Jupiter Ascending</name>
+    <attribute>genre:Action</attribute>
+    <relation>Mila Kunis:actor</relation>
+    <relation>Channing Tatum:actor</relation>
+    <relation>Sean Bean:actor</relation>
+    <relation>Eddie Redmayne:actor</relation>
+  </node>
+  <node>
+    <name>The Intouchables</name>
+    <attribute>genre:Biography</attribute>
+    <relation>Fran�ois Cluzet:actor</relation>
+    <relation>Omar Sy:actor</relation>
+    <relation>Anne Le Ny:actor</relation>
+    <relation>Audrey Fleurot:actor</relation>
+  </node>
+  <node>
+    <name>Despicable Me 2</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Steve Carell:actor</relation>
+    <relation>Kristen Wiig:actor</relation>
+    <relation>Benjamin Bratt:actor</relation>
+    <relation>Miranda Cosgrove:actor</relation>
+  </node>
+  <node>
+    <name>Pirates of the Caribbean, Dead Men Tell No Tales</name>
+    <attribute>genre:Action</attribute>
+    <relation>Johnny Depp:actor</relation>
+    <relation>Javier Bardem:actor</relation>
+    <relation>Geoffrey Rush:actor</relation>
+    <relation>Brenton Thwaites:actor</relation>
+  </node>
+  <node>
+    <name>La d�licatesse</name>
+    <attribute>genre:Comedy</attribute>
+    <relation>Audrey Tautou:actor</relation>
+    <relation>Fran�ois Damiens:actor</relation>
+    <relation>Bruno Todeschini:actor</relation>
+    <relation>M�lanie Bernier:actor</relation>
+  </node>
+  <node>
+    <name>Ruby Sparks</name>
+    <attribute>genre:Comedy</attribute>
+    <relation>Paul Dano:actor</relation>
+    <relation>Zoe Kazan:actor</relation>
+    <relation>Chris Messina:actor</relation>
+    <relation>Annette Bening:actor</relation>
+  </node>
+  <node>
+    <name>The Words</name>
+    <attribute>genre:Drama</attribute>
+    <relation>Dennis Quaid:actor</relation>
+    <relation>John Hannah:actor</relation>
+    <relation>Jeremy Irons:actor</relation>
+    <relation>Bradley Cooper:actor</relation>
+  </node>
+  <node>
+    <name>Angry Birds</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Jason Sudeikis:actor</relation>
+    <relation>Josh Gad:actor</relation>
+    <relation>Danny McBride:actor</relation>
+    <relation>Maya Rudolph:actor</relation>
+  </node>
+  <node>
+    <name>Cloudy with a Chance of Meatballs 2</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Bill Hader:actor</relation>
+    <relation>Anna Faris:actor</relation>
+    <relation>James Caan:actor</relation>
+    <relation>Will Forte:actor</relation>
+  </node>
+  <node>
+    <name>Inside Llewyn Davis</name>
+    <attribute>genre:Comedy</attribute>
+    <relation>Oscar Isaac:actor</relation>
+    <relation>Carey Mulligan:actor</relation>
+    <relation>Justin Timberlake:actor</relation>
+    <relation>Ethan Phillips:actor</relation>
+  </node>
+  <node>
+    <name>Kung Fu Panda 3</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Jack Black:actor</relation>
+    <relation>Bryan Cranston:actor</relation>
+    <relation>Dustin Hoffman:actor</relation>
+    <relation>Angelina Jolie:actor</relation>
+  </node>
+  <node>
+    <name>The SpongeBob Movie, Sponge Out of Water</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Antonio Banderas:actor</relation>
+    <relation>Eric Bauza:actor</relation>
+    <relation>Tim Conway:actor</relation>
+    <relation>Eddie Deezen:actor</relation>
+  </node>
+  <node>
+    <name>Minions</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Sandra Bullock:actor</relation>
+    <relation>Jon Hamm:actor</relation>
+    <relation>Michael Keaton:actor</relation>
+    <relation>Allison Janney:actor</relation>
+  </node>
+  <node>
+    <name>22 Jump Street</name>
+    <attribute>genre:Action</attribute>
+    <relation>Jonah Hill:actor</relation>
+    <relation>Channing Tatum:actor</relation>
+    <relation>Peter Stormare:actor</relation>
+    <relation>Wyatt Russell:actor</relation>
+  </node>
+  <node>
+    <name>Cooties</name>
+    <attribute>genre:Action</attribute>
+    <relation>Elijah Wood:actor</relation>
+    <relation>Rainn Wilson:actor</relation>
+    <relation>Alison Pill:actor</relation>
+    <relation>Jack McBrayer:actor</relation>
+  </node>
+  <node>
+    <name>Game Night</name>
+    <attribute>genre:Action</attribute>
+    <relation>Jason Bateman:actor</relation>
+    <relation>Rachel McAdams:actor</relation>
+    <relation>Kyle Chandler:actor</relation>
+    <relation>Sharon Horgan:actor</relation>
+  </node>
+  <node>
+    <name>The Interview</name>
+    <attribute>genre:Action</attribute>
+    <relation>James Franco:actor</relation>
+    <relation>Seth Rogen:actor</relation>
+    <relation>Lizzy Caplan:actor</relation>
+    <relation>Randall Park:actor</relation>
+  </node>
+  <node>
+    <name>John Wick</name>
+    <attribute>genre:Action</attribute>
+    <relation>Keanu Reeves:actor</relation>
+    <relation>Michael Nyqvist:actor</relation>
+    <relation>Alfie Allen:actor</relation>
+    <relation>Willem Dafoe:actor</relation>
+  </node>
+  <node>
+    <name>Zootopia</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Ginnifer Goodwin:actor</relation>
+    <relation>Jason Bateman:actor</relation>
+    <relation>Idris Elba:actor</relation>
+    <relation>Jenny Slate:actor</relation>
+  </node>
+  <node>
+    <name>The Lego Ninjago Movie</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Jackie Chan:actor</relation>
+    <relation>Dave Franco:actor</relation>
+    <relation>Fred Armisen:actor</relation>
+    <relation>Kumail Nanjiani:actor</relation>
+  </node>
+  <node>
+    <name>Samba</name>
+    <attribute>genre:Comedy</attribute>
+    <relation>Omar Sy:actor</relation>
+    <relation>Charlotte Gainsbourg:actor</relation>
+    <relation>Tahar Rahim:actor</relation>
+    <relation>Iz�a Higelin:actor</relation>
+  </node>
+  <node>
+    <name>Nerve</name>
+    <attribute>genre:Adventure</attribute>
+    <relation>Emma Roberts:actor</relation>
+    <relation>Dave Franco:actor</relation>
+    <relation>Emily Meade:actor</relation>
+    <relation>Miles Heizer:actor</relation>
+  </node>
+  <node>
+    <name>Whiskey Tango Foxtrot</name>
+    <attribute>genre:Biography</attribute>
+    <relation>Tina Fey:actor</relation>
+    <relation>Margot Robbie:actor</relation>
+    <relation>Martin Freeman:actor</relation>
+    <relation>Alfred Molina:actor</relation>
+  </node>
+  <node>
+    <name>Mine</name>
+    <attribute>genre:Drama</attribute>
+    <relation>Armie Hammer:actor</relation>
+    <relation>Annabelle Wallis:actor</relation>
+    <relation>Tom Cullen:actor</relation>
+    <relation>Clint Dyer:actor</relation>
+  </node>
+  <node>
+    <name>Shin Gojira</name>
+    <attribute>genre:Action</attribute>
+    <relation>Hiroki Hasegawa:actor</relation>
+    <relation>Yutaka Takenouchi:actor</relation>
+    <relation>Satomi Ishihara:actor</relation>
+    <relation>Ren Osugi:actor</relation>
+  </node>
+  <node>
+    <name>Battle of the Sexes</name>
+    <attribute>genre:Biography</attribute>
+    <relation>Emma Stone:actor</relation>
+    <relation>Steve Carell:actor</relation>
+    <relation>Andrea Riseborough:actor</relation>
+    <relation>Natalie Morales:actor</relation>
+  </node>
+  <node>
+    <name>Spider-Man, Into the Spider-Verse</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Shameik Moore:actor</relation>
+    <relation>Jake Johnson:actor</relation>
+    <relation>Hailee Steinfeld:actor</relation>
+    <relation>Mahershala Ali:actor</relation>
+  </node>
+  <node>
+    <name>The Secret Life of Pets 2</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Patton Oswalt:actor</relation>
+    <relation>Kevin Hart:actor</relation>
+    <relation>Harrison Ford:actor</relation>
+    <relation>Eric Stonestreet:actor</relation>
+  </node>
+  <node>
+    <name>Smallfoot</name>
+    <attribute>genre:Animation</attribute>
+    <relation>Channing Tatum:actor</relation>
+    <relation>James Corden:actor</relation>
+    <relation>Zendaya:actor</relation>
+    <relation>Common:actor</relation>
+  </node>
+</network>
